@@ -26,10 +26,17 @@ describe DockingStation do
     end
   end
 
-  describe 'dock' do
+  describe 'dock bike' do
     it 'raises an error when full' do
       subject.capacity.times {subject.dock Bike.new}
       expect { subject.dock Bike.new }.to raise_error 'Docking station full'
+    end
+
+    it 'lets you report broken' do
+      station = DockingStation.new
+      bike = Bike.new
+      station.dock(bike, false)
+      expect(bike.working).to eq false
     end
   end
 
@@ -43,4 +50,6 @@ describe DockingStation do
     expect{ subject.dock(bike) }.to raise_error 'Docking station full'
   end
 end
+
+
 end

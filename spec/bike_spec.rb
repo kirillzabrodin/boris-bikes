@@ -5,6 +5,8 @@ describe Bike do
 
 
   it 'can change bike attribute to broken' do
-    expect(Bike.new.broken).to eq false
+    bike  = Bike.new
+    bike.working = false
+    expect(bike.working).to eq false
   end
 end
