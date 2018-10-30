@@ -1,0 +1,3 @@
+Error type: NameError
+File Path: /Users/kirillzabrodin/.rvm/rubies/ruby-2.5.1/bin/irb
+Line Number: 1
