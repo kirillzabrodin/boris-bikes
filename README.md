@@ -1,4 +1,25 @@
-# Boris Bikes Project
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-#
-This is a project I am doing as part of my time at Makers Academy. I will be making this with the ideals of TDD and best-practice in mind.
+## Boris Bikes
+A little project creating a Boris Bike-esque tracking system using ruby.
+
+## Motivation
+Makers made me do it.
+
+## Build status
+Not built
+
+## Features
+It runs extremely slowly compared to other similar projects.
+
+## Installation
+Download the .rb file and run or clone/fork for full rspec experience.
+
+## Tests
+rspec in the project directory.
+
+## How to use?
+Have no clue yet as it doesn't work.
+
+## License
+A License to mess up code.
+
+Not-MIT © [Kirill Zabrodin](2018)
