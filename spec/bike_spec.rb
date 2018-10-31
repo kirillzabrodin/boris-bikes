@@ -6,7 +6,7 @@ describe Bike do
 
   it 'can change bike attribute to broken' do
     bike  = Bike.new
-    bike.working = false
+    bike.report_broken
     expect(bike.working).to eq false
   end
 end
