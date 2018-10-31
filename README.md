@@ -5,7 +5,7 @@ A little project creating a Boris Bike-esque tracking system using ruby.
 Makers made me do it.
 
 ## Build status
-Not built
+Not built or working
 
 ## Features
 It runs extremely slowly compared to other similar projects.
