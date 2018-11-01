@@ -2,7 +2,9 @@ require_relative 'bike'
 require 'pry'
 
 class DockingStation
+
   public
+  
   attr_reader :bikes
   attr_accessor :capacity
   DEFAULT_CAPACITY = 2
@@ -13,8 +15,7 @@ class DockingStation
   end
 
   def release_bike
-    fail 'No bikes available' if empty?
-    fail 'No working bikes' unless select_working_bike != nil
+    fail 'No bikes available' if empty? || select_working_bike == nil
     @bikes.delete(select_working_bike)
   end
 
@@ -34,7 +35,7 @@ class DockingStation
   end
 
   def select_working_bike
-    @bikes.detect { |bike| bike.working }
+    @bikes.detect { |bike| bike.working? }
   end
 
 end

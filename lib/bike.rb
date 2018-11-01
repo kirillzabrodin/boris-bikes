@@ -10,8 +10,12 @@ class Bike
     @working = false
   end
 
-  def report_fixed
+  def report_working
     @working = true
+  end
+
+  def working?
+    @working
   end
 
 end
