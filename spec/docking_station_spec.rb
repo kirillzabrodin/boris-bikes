@@ -12,7 +12,7 @@ describe DockingStation do
 
   it 'releases docked bikes' do
 		subject.dock(bike)
-		expect(subject.bikes).to eq [bike]
+		expect(subject.bikes ).to eq [bike]
   end
 
   it 'does not release broken bikes' do
