@@ -15,18 +15,6 @@ shared_examples_for BikeContainer do
     expect(subject.bikes ).to eq [bike]
   end
 
-  it 'does not release broken bikes' do
-    bike_broken = double(:bike, working?: false)
-    subject.dock(bike_broken)
-    expect {subject.release_working_bike}.to raise_error "#{described_class.name} has no working bikes"
-  end
-
-  it 'releases broken bikes for repair' do
-    bike_broken = double(:bike, working?: false)
-    subject.dock(bike_broken)
-    expect(subject.release_broken_bike).to eq bike_broken
-  end
-
   it { is_expected.to respond_to(:dock).with(1).argument }
 
   describe 'release_working_bike' do

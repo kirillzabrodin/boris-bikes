@@ -12,4 +12,10 @@ describe Garage do
     expect(subject.fix_bike(broken_bike)).to be broken_bike.working?
   end
 
+  it "doesn't release broken bikes" do
+    bike_broken = double(:bike, working?: false)
+    subject.dock(bike_broken)
+    expect { subject.release_broken_bike }.to raise_error "#{described_class.name} can only release working bikes"
+  end
+
 end

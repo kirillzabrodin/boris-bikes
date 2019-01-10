@@ -7,5 +7,9 @@ class Garage
   def fix_bike(bike)
     bike.report_working
   end
-  
+
+  def release_broken_bike
+    fail "#{self.class.name} can only release working bikes"
+  end
+
 end
